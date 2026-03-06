@@ -26,3 +26,8 @@ class AuthTests(APITestCase):
     def test_swagger_ui_access(self):
         response = self.client.get(self.swagger_url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def test_get_token_fail(self):
+        data = {"username": self.username, "password": "yanlis_sifre_123"}
+        response = self.client.post(self.token_url, data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
