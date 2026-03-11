@@ -108,8 +108,8 @@ REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
 SPECTACULAR_SETTINGS = {
-    'TITLE': 'Trendify Staj API',
-    'DESCRIPTION': 'JWT ve Swagger Entegrasyonu Testi',
+    'TITLE': 'Token-auth-api',
+    'DESCRIPTION': 'JWT and Swagger Integration Test',
     'VERSION': '1.0.0',
     'SERVE_INCLUDE_SCHEMA': False,
 }
