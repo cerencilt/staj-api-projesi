@@ -16,3 +16,8 @@ This is a backend API project developed with Python and Django.
 
 4. **Run the project:**
    `python manage.py runserver`
+   
+   ## Running Tests
+
+The project includes automated tests to verify authentication and API endpoints. To run the tests, use the following command:
+`python manage.py test` 
