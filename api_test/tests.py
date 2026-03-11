@@ -6,14 +6,14 @@ from django.contrib.auth.models import User
 
 class AuthTests(APITestCase):
     def setUp(self):
-        # Test kullanıcısı oluştur
+        
         self.username = "testuser"
         self.password = "testpass123"
         self.user = User.objects.create_superuser(
             username=self.username, 
             password=self.password
         )
-        # Url'lerin 'urls.py' dosyasındaki 'name' kısımlarıyla eşleştiğinden emin ol
+       
         self.token_url = reverse('token_obtain_pair')
         self.swagger_url = reverse('swagger-ui')
 
