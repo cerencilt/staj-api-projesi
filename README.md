@@ -1,30 +1,94 @@
-# Token Auth API Project
+# Token Auth API
 
-This is a backend API project developed with Python and Django.
+This project is a backend REST API developed with **Python** and **Django** that implements **token-based authentication**.
 
-## Project Setup
+## Features
 
-1. **Clone the repository:**
-   `git clone https://github.com/cerencilt/token-auth-api.git`
+* User authentication with tokens
+* Secure API endpoints
+* Environment variable configuration
+* Automated tests for authentication and API endpoints
 
-2. **Create and activate virtual environment:**
-   `python -m venv venv`
-   `source venv/bin/activate` # For Windows: venv\Scripts\activate
+---
 
-3. **Install requirements:**
-   `pip install -r requirements.txt`
+# Project Setup
 
-4. **Run the project:**
-   `python manage.py runserver`
+## 1. Clone the repository
 
-5. **Setup Environment Variables**
-Copy the sample environment file and update the values with your own:
+```bash
+git clone https://github.com/cerencilt/token-auth-api.git
+cd token-auth-api
+```
+
+## 2. Create and activate a virtual environment
+
+```bash
+python -m venv venv
+```
+
+Activate the virtual environment:
+
+Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+Mac / Linux:
+
+```bash
+source venv/bin/activate
+```
+
+## 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## 4. Setup environment variables
+
+Copy the sample environment file:
 
 ```powershell
-copy .env.sample .env 
-Open the .env file and replace your-secret-key-goes-here with your actual Django secret key. 
-   
-   ## Running Tests
+copy .env.sample .env
+```
 
-The project includes automated tests to verify authentication and API endpoints. To run the tests, use the following command:
-`python manage.py test` 
+Open the `.env` file and replace the following value with your own Django secret key:
+
+```
+SECRET_KEY=your-secret-key-goes-here
+```
+
+## 5. Run the project
+
+```bash
+python manage.py runserver
+```
+
+The API will be available at:
+
+```
+http://127.0.0.1:8000/
+```
+
+---
+
+# Running Tests
+
+The project includes automated tests to verify authentication and API endpoints.
+
+Run the tests with:
+
+```bash
+python manage.py test
+```
+
+---
+
+# Technologies Used
+
+* Python
+* Django
+* Django REST Framework
+* Token Authentication
