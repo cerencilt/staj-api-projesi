@@ -16,6 +16,13 @@ This is a backend API project developed with Python and Django.
 
 4. **Run the project:**
    `python manage.py runserver`
+
+5. **Setup Environment Variables**
+Copy the sample environment file and update the values with your own:
+
+```powershell
+copy .env.sample .env 
+Open the .env file and replace your-secret-key-goes-here with your actual Django secret key. 
    
    ## Running Tests
 
