@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from rest_framework.viewsets import ModelViewSet
+from .models import Content
+from .serializers import ContentSerializer
 
-# Create your views here.
+class ContentViewSet(ModelViewSet):
+    queryset = Content.objects.all()
+    serializer_class = ContentSerializer 
