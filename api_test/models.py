@@ -1,8 +1,5 @@
 from django.db import models
 
-
-
-
 class Content(models.Model):
 
     LANGUAGE_CHOICES = [
